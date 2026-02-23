@@ -54,8 +54,7 @@ def try_find_working_cutoff(month: str, tier: str) -> tuple[int, str]:
         try:
             _ = fetch_json(url)
             return cutoff, url
-        except Exception as e:
-            print(f"[warn] {tier} cutoff {cutoff} failed: {e}")
+        except Exception:
             time.sleep(0.4)
     raise RuntimeError(f"No working cutoff found for {tier} in month {month}")
 

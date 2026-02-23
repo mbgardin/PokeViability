@@ -35,22 +35,15 @@ def flatten_pokemon(p: dict) -> dict:
 def main():
     ensure_dirs()
 
-    rows = []  # <-- must be outside the loop
+    rows = []
 
-    start = time.time()
     for pid in range(1, MAX_ID + 1):
-        t0 = time.time()
         p = get_json(f"{BASE}/pokemon/{pid}")
         rows.append(flatten_pokemon(p))
-
-        if pid % 25 == 0:
-            elapsed = time.time() - start
-            print(f"[pokeapi] {pid}/{MAX_ID} last={time.time()-t0:.2f}s elapsed={elapsed:.1f}s")
-
         time.sleep(0.10)
 
     df = pd.DataFrame(rows)
-    df.to_csv(OUTFILE, index=False)  # <-- must be AFTER the loop
+    df.to_csv(OUTFILE, index=False)
     print("Wrote:", OUTFILE, "| rows:", len(df), "| cols:", df.shape[1])
 
 if __name__ == "__main__":
