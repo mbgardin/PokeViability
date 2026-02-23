@@ -1,0 +1,21 @@
+{
+  "month": "2026-01",
+  "tiers_requested": [
+    "gen4ubers",
+    "gen4ou",
+    "gen4uu",
+    "gen4nu"
+  ],
+  "tiers_used": [
+    "gen4ou"
+  ],
+  "cutoff_candidates": [
+    1760,
+    1695,
+    1630,
+    1500
+  ],
+  "chosen_cutoffs": {
+    "gen4ou": 1760
+  }
+}
