@@ -18,7 +18,7 @@ To reproduce the dataset from scratch, ensure you have Python 3 installed, then 
 
 ```bash
 # Clone the repository and navigate to the project directory
-git clone <your-repo-url>
+git clone __________
 cd PokeViability
 
 # Create and activate a virtual environment (optional but recommended)
@@ -59,4 +59,4 @@ The final dataset (`data/cleaned/pokemon_gen4_competitive.csv`) contains **493 r
 *   **Engineered Features**: Features such as `bst`, `is_ou`, `max_usage`, and `has_two_types` were engineered from the raw data to directly assist in answering the motivating question.
 
 ## 7. Link to Blog Post
-A detailed blog post discussing the exploratory findings and methodology can be found here: [Link to Blog Post](#) *(Replace with actual URL upon deployment)*
+A detailed blog post discussing the exploratory findings and methodology can be found here: [PokeViability](https://mbgardin.github.io/prosite_staging/eda_blog_post.html)
