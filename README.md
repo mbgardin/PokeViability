@@ -6,7 +6,7 @@ This project explores the relationship between a Pokémon's base stats, typing, 
 ## 2. Motivating Question
 **How do base stats and typing relate to competitive viability in the Gen 4 metagame?** 
 
-Are higher Base Stat Totals (BST) always indicative of OverUsed (OU) status, and what role do secondary typings play in determining a Pokémon's tier?
+Are higher Base Stat Totals (BST) always indicative of OverUsed (OU) status, or do other factors such as type play a role?
 
 ## 3. Data Sources
 This project relies on two public data sources:
